@@ -64,7 +64,7 @@ const Home = () => {
               alt=""
             />
           </div>
-          <h1>ng.hao.t</h1>
+          <h1>Nguyen Hao Tran</h1>
         </div>
         <div className="slogan">
           <p>
@@ -73,17 +73,70 @@ const Home = () => {
           </p>
         </div>
       </div>
+      {/*  */}
       <div className="contents">
         <video autoPlay loop muted playsInline className="banner_video">
           <source src="public\banner_2359.mp4" type="video/mp4" />
           Trình duyệt của bạn không hỗ trợ video.
         </video>
+        {/* PROJECTS */}
         <div className="projects">
-          <div className="items_project"></div>
-          <div className="texts"></div>
+          <p className="p_projects">
+            "Những thước phim này không chỉ là hình ảnh chuyển động, mà còn là
+            góc nhìn, cảm xúc và cách tôi kể câu chuyện của riêng mình."
+          </p>
+          <div className="items_project">
+            <div className="item_project">
+              <a href="#">
+                <p>tatsemakerhub</p>
+                <img src="public\tatseMakerHub_1.1.1.png" alt="" />
+              </a>
+            </div>
+            <div className="item_project">
+              <a href="#">
+                <p>qua khung cửa sổ #2</p>
+                <img src="public\QKCS1.2_1.1.2.png" alt="" />
+              </a>
+            </div>
+            <div className="item_project">
+              <a href="#">
+                <p>qua khung cửa sổ #6</p>
+                <img src="public\QKCS_6_1.1.2.png" alt="" />
+              </a>
+            </div>
+            <div className="item_project">
+              <a href="#">
+                <p>qua khung cửa sổ #3</p>
+                <img src="public\QKCS3_1.1.1.png" alt="" />
+              </a>
+            </div>
+            <div className="item_project">
+              <a href="#">
+                <p>Trị An 2023</p>
+                <img src="public\DKM_1.1.4.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div className="texts">
+            <p className="p_projects">
+              "Mỗi bức ảnh là một khung hình tĩnh, nơi ánh sáng, màu sắc và
+              khoảnh khắc cùng nhau tạo nên câu chuyện riêng."
+            </p>
+          </div>
           <div className="stills"></div>
         </div>
-        <div className="footer"></div>
+      </div>
+      <div className="footer">
+        <div className="socials">
+          <a href="https://www.facebook.com/profile.php?id=100004978517081">
+            <i className="ri-facebook-box-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/ng.hao.t/?fbclid=IwY2xjawFWjpVleHRuA2FlbQIxMAABHTTWJkf5XziAIpi7WI_szWKaBTgqJPMZNCaRVW4TLBlPtbbydJke-DisYw_aem_ZNAD-vCGjGHxYT6F5XSoeg">
+            <i className="ri-instagram-line"></i>
+          </a>
+        </div>
+        <p>HCM city _ VietNam</p>
+        <p>trannguyenhao123@gmail.com</p>
       </div>
     </div>
   );

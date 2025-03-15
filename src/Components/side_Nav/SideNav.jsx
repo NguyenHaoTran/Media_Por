@@ -62,9 +62,6 @@ const SideNav = () => {
           <a href="https://www.instagram.com/ng.hao.t/?fbclid=IwY2xjawFWjpVleHRuA2FlbQIxMAABHTTWJkf5XziAIpi7WI_szWKaBTgqJPMZNCaRVW4TLBlPtbbydJke-DisYw_aem_ZNAD-vCGjGHxYT6F5XSoeg">
             <i className="ri-instagram-line"></i>
           </a>
-          <a href="https://github.com/NguyenHaoTran">
-            <i className="ri-github-fill"></i>
-          </a>
         </div>
       </nav>
     </>

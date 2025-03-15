@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background-color: black;
+  background-color: rgb(15, 15, 15);
   height: 100%;
 
   .header_bar {
@@ -17,6 +17,10 @@
     align-items: center;
     padding: 0 20% 0 20%;
     background-color: rgb(10, 10, 10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 
     .Name {
       display: flex;
@@ -35,7 +39,7 @@
       h1 {
         font-size: 20px;
         padding-left: 20px;
-        font-weight: bold;
+        font-weight: lighter;
         color: rgb(241, 172, 22);
       }
     }
@@ -49,7 +53,7 @@
   }
 
   .contents {
-    padding-top: 5px;
+    padding-top: 90px;
     padding-bottom: 100px;
     max-width: 1200px;
     display: flex;
@@ -58,6 +62,109 @@
     flex-direction: column;
     .banner_video {
       max-width: 1200px;
+    }
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .p_projects {
+        max-width: 800px;
+        font-size: 12px;
+        text-align: left;
+        padding-bottom: 30px;
+        align-self: flex-start;
+        color: rgb(190, 190, 190);
+      }
+      padding-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .items_project {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        .item_project {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          a {
+            text-decoration: none;
+            display: block;
+            position: relative;
+          }
+          p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: 200;
+            text-align: center;
+            padding: 10px 20px;
+            letter-spacing: 2px;
+            font-style: italic;
+            opacity: 0; // Ẩn mặc định
+            transition: opacity 0.3s ease, background 0.3s ease;
+            z-index: 2;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0); // Mặc định trong suốt
+            transition: background 0.3s ease;
+          }
+
+          &:hover::after {
+            background: rgba(0, 0, 0, 0.3);
+          }
+
+          &:hover p {
+            opacity: 1;
+          }
+
+          img {
+            width: 600px;
+          }
+        }
+      }
+      .texts {
+        padding-top: 100px;
+        .p_projects {
+          color: rgb(241, 172, 22);
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  //FOOTER
+  .footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    .socials {
+      display: flex;
+      gap: 10px;
+      i {
+        color: rgb(155, 155, 155);
+      }
+    }
+    p {
+      font-weight: 200;
+      font-style: italic;
+      letter-spacing: 1px;
+      color: rgb(155, 155, 155);
     }
   }
 }
