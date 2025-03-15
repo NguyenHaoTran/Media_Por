@@ -22,7 +22,7 @@ const SideNav = () => {
         </span>
       </button>
       <nav className={`side-nav ${isOpen ? "open" : ""}`}>
-        <div className="Name">
+        {/* <div className="Name">
           <div className="avt">
             <img
               src="https://raw.githubusercontent.com/NguyenHaoTran/IMGS_Dev_Por/refs/heads/main/avt.jpg"
@@ -30,7 +30,7 @@ const SideNav = () => {
             />
           </div>
           <h1>ng.hao.t</h1>
-        </div>
+        </div> */}
         <div className="line"></div>
         <ul>
           <li onClick={handleMenuClick}>

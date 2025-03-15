@@ -45,7 +45,7 @@
       font-size: 15px;
       padding-left: 20px;
       font-weight: 200;
-      color: $accent-color;
+      color: white;
     }
   }
 
@@ -70,14 +70,13 @@
     width: 100%;
     margin: 0;
     padding-left: 0;
-    color: $link-color;
+    color: white;
     li {
       display: flex;
       align-items: center;
       width: 100%;
       padding: 0 0 0 45px;
       transition: 0.7s;
-      text-decoration: underline;
       i {
         transition: 0.5s;
       }
@@ -90,7 +89,7 @@
 
       a {
         margin-left: 10px;
-        color: $accent-color;
+        color: white;
         text-decoration: none;
         font-size: $font-medium;
         margin: 15px;

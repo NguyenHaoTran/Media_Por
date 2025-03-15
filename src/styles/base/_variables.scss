@@ -12,18 +12,18 @@
 // $secondary-font: "JetBrains Mono",
 // monospace;
 
-// Color palette (Classic Film Theme)
-$primary-color: #b67e55; // Nâu đất - Cổ điển, ấm áp
-$secondary-color: #3f2e26; // Nâu cà phê - Tạo chiều sâu nhẹ nhàng
-$accent-color: #d4a373; // Vàng be - Gợi cảm giác retro, hoài cổ
-$background-color: #f5ede1; // Màu giấy cũ - Nhẹ nhàng, ấm áp
-$text-color: #3c2a21; // Nâu sẫm - Dịu mắt, hoài cổ
-$link-color: #a67c52; // Nâu caramel - Nhấn nhẹ nhàng
-$link-hover-color: darken($link-color, 10%); // Hover tạo hiệu ứng mượt mà hơn
+// Color palette (Classic Cinematic Black)
+$primary-color: #1c1c1c; // Đen than - Chủ đạo, sâu lắng
+$secondary-color: #2a2a2a; // Xám khói - Tạo độ tương phản nhẹ
+$accent-color: #4a4a4a; // Xám bạc - Gợi cảm giác film noir
+$background-color: #121212; // Đen ánh tím - Giống hiệu ứng phim cũ
+$text-color: #e0e0e0; // Trắng xám - Đủ sáng nhưng không chói
+$link-color: #757575; // Xám chì - Nhấn nhẹ nhàng
+$link-hover-color: darken($link-color, 15%); // Tối hơn khi hover
 
-// Fonts (Gợi ý dùng font cổ điển hơn)
-$primary-font: "Playfair Display", serif; // Font chữ có nét hoài cổ, sang trọng
-$secondary-font: "Cormorant Garamond", serif; // Gợi cảm giác phim xưa
+// Fonts (Giữ cảm giác điện ảnh cổ điển)
+$primary-font: "Cinzel", serif; // Font có nét mạnh mẽ, sang trọng
+$secondary-font: "EB Garamond", serif; // Cảm giác như tiêu đề phim noir
 
 // Font sizes
 $base-font-size: 16px;
