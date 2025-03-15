@@ -1,0 +1,89 @@
+@import "./../../styles/main.scss";
+
+.kinhnghiem_container {
+  padding-top: 120px;
+  height: 100vh;
+  background-color: $background-color;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.171) 2px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  animation: bg-move 35s linear infinite; // Animation cho background di chuyển
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/pattern2.png");
+    h2 {
+      color: $accent-color;
+      text-decoration: underline;
+    }
+    .kinhNghiem_content {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-bottom: 100px;
+      padding: 50px;
+
+      .kinhNghiem_contents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+        .kinhNghiem_name {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          gap: 30px;
+
+          .kinhNghiem_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .kinhNghiem_company {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 80px;
+            line-height: 1.5;
+
+            h4 {
+              font-size: 20px;
+              color: $primary-color;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes bg-move {
+  0% {
+    background-position: -5px -5px;
+  }
+
+  100% {
+    background-position: 100% 100%; // Di chuyển đến góc trên bên phải
+  }
+}

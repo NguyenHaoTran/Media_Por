@@ -1,0 +1,239 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixins";
+@import "./sideNav-responsive.scss";
+
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 150px;
+  height: 70%;
+  width: 250px;
+  // background-color: rgba($color: #5f5f5f, $alpha: 0.2);
+  background: linear-gradient(
+    45deg,
+    rgba(33, 33, 33, 0.5) 25%,
+    rgba(51, 51, 51, 0.5) 50%,
+    rgba(33, 33, 33, 0.5) 75%
+  );
+  background-size: 300% 300%;
+  animation: bg-animation 15s infinite linear; // Điều chỉnh thời gian theo ý muốn
+  // glass
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+  .Name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .avt {
+      width: 40px;
+      height: 40px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    h1 {
+      font-size: 15px;
+      padding-left: 20px;
+      font-weight: 200;
+      color: $accent-color;
+    }
+  }
+
+  .line {
+    padding-top: 30px;
+    width: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  &.open {
+    left: 0; // Hiển thị side nav khi class 'open' được thêm vào
+  }
+
+  @media (max-width: $tablet) {
+    width: 200px;
+    left: -250px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    color: $link-color;
+    li {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0 0 0 45px;
+      transition: 0.7s;
+      text-decoration: underline;
+      i {
+        transition: 0.5s;
+      }
+      &:hover {
+        background-color: $secondary-color;
+        i {
+          color: $accent-color;
+        }
+      }
+
+      a {
+        margin-left: 10px;
+        color: $accent-color;
+        text-decoration: none;
+        font-size: $font-medium;
+        margin: 15px;
+      }
+    }
+  }
+
+  @include respond-to(tablet) {
+    width: 250px;
+    ul {
+      padding-left: 25px;
+    }
+  }
+
+  .socials {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      color: $text-color;
+      text-decoration: none;
+      font-size: $font-medium;
+      border-radius: 50%;
+      transition: 0.7s;
+      margin: 2px;
+      &:hover {
+        background-color: $secondary-color;
+      }
+      i {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+// Key background
+@keyframes bg-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 50% 50%; // Thêm điểm giữa để chuyển động mượt hơn
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* From Uiverse.io by ShadowShahriar */
+button {
+  position: fixed;
+  margin: 30px;
+  --border-radius: 15px;
+  --border-width: 4px;
+  appearance: none;
+  padding: 1em 2em;
+  border: 0;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 1001;
+  background: rgba($color: #1a1a1a, $alpha: 0.5);
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  span {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+button::after {
+  --m-i: linear-gradient(#000, #000);
+  --m-o: content-box, padding-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--border-width);
+  border-radius: var(--border-radius);
+  background-image: conic-gradient(
+    #488cfb,
+    #29dbbc,
+    #ddf505,
+    #ff9f0e,
+    #e440bb,
+    #655adc,
+    #488cfb
+  );
+  -webkit-mask-image: var(--m-i), var(--m-i);
+  mask-image: var(--m-i), var(--m-i);
+  -webkit-mask-origin: var(--m-o);
+  mask-origin: var(--m-o);
+  -webkit-mask-clip: var(--m-o);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  filter: hue-rotate(0);
+  animation: rotate-hue linear 1200ms infinite;
+  animation-play-state: paused;
+}
+
+button:hover::after {
+  animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+  to {
+    filter: hue-rotate(1turn);
+  }
+}
+
+button,
+button::after {
+  box-sizing: border-box;
+}
+
+button:active {
+  --border-width: 5px;
+}
+
+@media (min-width: $tablet) {
+  .toggle-btn {
+    display: none; // Ẩn nút toggle trên màn hình lớn
+  }
+}
+
+button span:hover {
+  transition: all 0.7s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+  transition: all 1s;
+}

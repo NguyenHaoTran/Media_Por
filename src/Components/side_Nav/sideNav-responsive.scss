@@ -1,0 +1,10 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/mixins";
+
+@media screen and (min-width: 768px) {
+    .side-Nav{
+        ul{
+            padding-left: -25px;
+        }
+    }
+}
