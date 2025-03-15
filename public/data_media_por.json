@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Album 1",
+    "coverImage": "https://i.imgur.com/BUcR9J5.jpg",
+    "images": [
+      "https://i.imgur.com/hW6Tlnh.jpg",
+      "https://i.imgur.com/I78yDZo.jpg",
+      "https://i.imgur.com/yWoXALx.jpg",
+      "https://i.imgur.com/pQMOvZu.jpg",
+      "https://i.imgur.com/OsCf6K3.jpg",
+      "https://i.imgur.com/LQglEK9.jpg",
+      "https://i.imgur.com/IlnmCtW.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Album 2",
+    "coverImage": "https://i.imgur.com/l7qgqHz.jpg",
+    "images": [
+      "https://i.imgur.com/SugCOt1.jpg",
+      "https://i.imgur.com/UbrbIPX.jpg",
+      "https://i.imgur.com/cDarw5u.jpg",
+      "https://i.imgur.com/cSKz0Zp.jpg",
+      "https://i.imgur.com/wn6dGKA.jpg",
+      "https://i.imgur.com/8EGnKoW.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Album 3",
+    "coverImage": "https://i.imgur.com/mZPAMz6.jpg",
+    "images": [
+      "https://i.imgur.com/Y3Ca0Ng.jpg",
+      "https://i.imgur.com/YgTcQqg.jpg",
+      "https://i.imgur.com/Jg3M5C2.jpg",
+      "https://i.imgur.com/iEWhZHt.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Album 4",
+    "coverImage": "https://i.imgur.com/Z2OgfOD.jpg",
+    "images": [
+      "https://i.imgur.com/AlXvBXL.jpg",
+      "https://i.imgur.com/dxqvHi1.jpg",
+      "https://i.imgur.com/lgif59E.jpg",
+      "https://i.imgur.com/1xJsUEP.jpg",
+      "https://i.imgur.com/nxudM9Y.jpg",
+      "https://i.imgur.com/6FSYdCZ.jpg",
+      "https://i.imgur.com/4FDvTLo.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Album 5",
+    "coverImage": "https://i.imgur.com/8x2vUYZ.jpg",
+    "images": [
+      "https://i.imgur.com/puJLV63.jpg",
+      "https://i.imgur.com/ufYFjtv.jpg",
+      "https://i.imgur.com/4U95sY8.jpg",
+      "https://i.imgur.com/LMnUy43.jpg",
+      "https://i.imgur.com/1zVn0d0.jpg",
+      "https://i.imgur.com/CWmGYKj.jpg",
+      "https://i.imgur.com/BxAXrmD.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Album 6",
+    "coverImage": "https://i.imgur.com/EQqIh0x.jpg",
+    "images": [
+      "https://i.imgur.com/NrdooXj.jpg",
+      "https://i.imgur.com/5E3rXiq.jpg",
+      "https://i.imgur.com/m7gSjsW.jpg",
+      "https://i.imgur.com/6iLSQjP.jpg",
+      "https://i.imgur.com/OaWFiAK.jpg",
+      "https://i.imgur.com/wW1gtbR.jpg",
+      "https://i.imgur.com/RS8NniV.jpg",
+      "https://i.imgur.com/9wDo9sS.jpg"
+    ]
+  }
+]

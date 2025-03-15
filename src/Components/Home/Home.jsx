@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import ScrollReveal from "scrollreveal";
 // Tilt
 import VanillaTilt from "vanilla-tilt";
+import AlbumGallery from "../AlbumGallery/AlbumGallery";
 
 const Home = () => {
   // ScrollReveal
@@ -22,38 +23,10 @@ const Home = () => {
     sr.reveal(`.note`, { origin: "bottom", interval: 200 });
     sr.reveal(`.cv`, { origin: "bottom", interval: 200 });
     //
-    sr.reveal(`.projects`, { origin: "bottom", interval: 200 });
+    // sr.reveal(`.projects`, { origin: "bottom", interval: 200 });
     sr.reveal(`.item`, { origin: "top", interval: 200 });
   }, []);
 
-  // Tilt for Cards
-  const cardRef1 = useRef(null);
-  const cardRef2 = useRef(null);
-  const cardRef3 = useRef(null);
-  const cardRef4 = useRef(null);
-
-  useEffect(() => {
-    const tiltOptions = {
-      max: 10,
-      speed: 100,
-      glare: true,
-      "max-glare": 0.2,
-    };
-
-    // Initialize VanillaTilt for each card
-    if (cardRef1.current) VanillaTilt.init(cardRef1.current, tiltOptions);
-    if (cardRef2.current) VanillaTilt.init(cardRef2.current, tiltOptions);
-    if (cardRef3.current) VanillaTilt.init(cardRef3.current, tiltOptions);
-    if (cardRef4.current) VanillaTilt.init(cardRef4.current, tiltOptions);
-
-    // Cleanup
-    return () => {
-      if (cardRef1.current) cardRef1.current.vanillaTilt.destroy();
-      if (cardRef2.current) cardRef2.current.vanillaTilt.destroy();
-      if (cardRef3.current) cardRef3.current.vanillaTilt.destroy();
-      if (cardRef4.current) cardRef4.current.vanillaTilt.destroy();
-    };
-  }, []);
   return (
     <div className="home_container">
       <div className="header_bar">
@@ -122,6 +95,7 @@ const Home = () => {
               "Mỗi bức ảnh là một khung hình tĩnh, nơi ánh sáng, màu sắc và
               khoảnh khắc cùng nhau tạo nên câu chuyện riêng."
             </p>
+            <AlbumGallery />
           </div>
           <div className="stills"></div>
         </div>
