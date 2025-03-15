@@ -109,7 +109,7 @@ const Home = () => {
             <i className="ri-instagram-line"></i>
           </a>
         </div>
-        <p>HCM city _ VietNam</p>
+        <p>HCM city_VietNam</p>
         <p>trannguyenhao123@gmail.com</p>
       </div>
     </div>

@@ -1,17 +1,41 @@
+.gallery-wrapper {
+  position: relative;
+}
+
 .album-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+
+    .album {
+      flex: 0 0 80%;
+      scroll-snap-align: center;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
 .album {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  width: 370px;
+  width: 100%;
 
   img {
     width: 100%;
@@ -23,23 +47,33 @@
   &:hover img {
     transform: scale(1.05);
   }
+}
 
-  p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 15px;
-    border-radius: 5px;
+// Pagination Dots
+.pagination-dots {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  bottom: 5px;
+  @media (min-width: 1024px) {
+    display: none;
   }
 }
 
-// Popup toàn màn hình (cho phép cuộn)
+.dot {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+
+  &.active {
+    background: white;
+  }
+}
+
+// Popup toàn màn hình
 .album-popup {
   position: fixed;
   width: 100%;
@@ -51,12 +85,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 99999999;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  overflow-y: auto; // Cho phép cuộn dọc khi nhiều ảnh
-  z-index: 99999999999999;
+  overflow-y: auto;
 
   &.active {
     opacity: 1;
