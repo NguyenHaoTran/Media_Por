@@ -24,57 +24,60 @@ const Skills = () => {
         <div className="items">
           {/* skill */}
           <div className="item">
-            <img src="https://raw.githubusercontent.com/NguyenHaoTran/IMGS_Dev_Por/refs/heads/main/ReactJS.png" alt="" />
+            <img src="public\DaVinci-Resolve-Logo.png" alt="" />
             <div className="text">
-              <h3>ReactJS</h3>
+              <h3>Davinci resolve</h3>
               <p>
-                Công cụ chính để thực hiện các trang web. <br />
-                Có khả năng tìm hiểu, áp dụng những công nghệ mới có liên quan.
+                Mạnh về chỉnh màu và hậu kỳ chuyên sâu, <br />
+                tối ưu màu sắc để tạo ra khung hình ấn tượng, truyền tải cảm xúc
+                hiệu quả.
               </p>
             </div>
           </div>
           <div className="line"></div>
           <div className="item">
-            <img src="https://raw.githubusercontent.com/NguyenHaoTran/IMGS_Dev_Por/refs/heads/main/HTML.png" alt="" />
+            <img src="public\pts_logo.png" alt="" />
             <div className="text">
-              <h3>HTML</h3>
+              <h3>Adobe Photoshop</h3>
               <p>
-                Thành thạo trong việc sử dụng. <br />
-                Có hiểu biết về SEO ở mức khá.
+                Khả năng xử lý hình ảnh linh hoạt, từ chỉnh sửa chi tiết đến
+                thiết kế đồ họa, <br />
+                giúp biến ý tưởng sáng tạo thành hình ảnh chuyên nghiệp.
               </p>
             </div>
           </div>
           <div className="line"></div>
           <div className="item">
-            <img src="https://raw.githubusercontent.com/NguyenHaoTran/IMGS_Dev_Por/refs/heads/main/SASS.png" alt="" />
+            <img src="public\Pr_logo.png" alt="" />
             <div className="text">
-              <h3>SASS</h3>
+              <h3>Adobe Premiere Pro</h3>
               <p>
-                Luôn áp dụng vào mọi dự án đã và đang thực hiện, cả khi sử dụng
-                ReactJS lẫn các trang web cơ bản.
+                Kỹ năng dựng phim chuyên nghiệp, tối ưu quy trình hậu kỳ,
+                <br /> đảm bảo nhịp điệu hình ảnh mượt mà và cuốn hút.
               </p>
             </div>
           </div>
           <div className="line"></div>
           <div className="item">
-            <img src="https://raw.githubusercontent.com/NguyenHaoTran/IMGS_Dev_Por/refs/heads/main/Javascript.png" alt="" />
+            <img src="public\Lr_logp.png" alt="" />
             <div className="text">
-              <h3>Javascript</h3>
+              <h3>Adobe Lightroom Classic</h3>
               <p>
-                Đủ kiến thức sử dụng để tạo ra những trang web dù không quá
-                chuyên sâu. <br />
-                Luôn luôn muốn học hỏi thêm và rèn luyện mỗi ngày.
+                Mắt thẩm mỹ tốt về màu sắc và ánh sáng, tinh chỉnh hình ảnh một
+                cách tự nhiên và chuyên nghiệp, <br /> phù hợp với cả phong cách
+                nghệ thuật lẫn thương mại.
               </p>
             </div>
           </div>
           <div className="line"></div>
           <div className="item">
-            <img src="https://raw.githubusercontent.com/NguyenHaoTran/IMGS_Dev_Por/refs/heads/main/NodeJS.png" alt="" />
+            <img src="public\Ae_logo.png" alt="" />
             <div className="text">
-              <h3>NodeJS</h3>
+              <h3>Adobe After Effects</h3>
               <p>
-                Áp dụng cho việc sử dụng ReactJS, có hiểu biết về truy xuất dư
-                liệu, API, làm việc với backend.
+                Thành thạo trong việc tạo hiệu ứng hình ảnh và motion graphics,
+                <br />
+                giúp nâng tầm câu chuyện bằng những kỹ thuật sáng tạo.
               </p>
             </div>
           </div>

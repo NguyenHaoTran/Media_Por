@@ -8,18 +8,11 @@
   top: 150px;
   height: 70%;
   width: 250px;
-  // background-color: rgba($color: #5f5f5f, $alpha: 0.2);
-  background: linear-gradient(
-    45deg,
-    rgba(33, 33, 33, 0.5) 25%,
-    rgba(51, 51, 51, 0.5) 50%,
-    rgba(33, 33, 33, 0.5) 75%
-  );
-  background-size: 300% 300%;
-  animation: bg-animation 15s infinite linear; // Điều chỉnh thời gian theo ý muốn
+
   // glass
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 1000;
   transition: left 0.3s ease;
   display: flex;

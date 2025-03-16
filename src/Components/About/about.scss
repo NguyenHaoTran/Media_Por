@@ -1,134 +1,24 @@
 @import "./../../styles/main.scss";
 
 .about_container {
-  padding-top: 120px;
-  height: 100%;
-  background-color: $background-color;
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.171) 2px,
-    transparent 0
-  );
-  background-size: 30px 30px;
-  background-position: -5px -5px;
-  animation: bg-move 35s linear infinite; // Animation cho background di chuyển
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .contents {
-    padding: 0;
+    height: 100vh;
+    background-color: beige;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     .name {
-      padding-top: 50px;
-      margin-left: 50px;
-      h2 {
-        color: $accent-color;
-        font-weight: bolder;
-        font-size: 50px;
-        padding-bottom: 10px;
+      padding-top: 120px;
+      width: 100%;
+      p {
+        color: black;
+        background-color: aqua;
       }
     }
-
-    .base_info {
-      padding-top: 50px;
-      margin-left: 50px;
-      display: flex;
-      align-items: flex-start;
-      background-image: url("../../assets/pattern2.png");
-      .icons {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 20px;
-        background-color: $secondary-color;
-        padding: 20px;
-        border-radius: 15px;
-        i {
-          display: flex;
-          align-items: center;
-          height: 50px;
-        }
-      }
-      .info {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-        .item {
-          display: flex;
-          flex-direction: column;
-          height: 50px;
-          padding-top: 5px;
-          line-height: 1.5;
-          b {
-            text-decoration: underline;
-            color: $primary-color;
-          }
-        }
-      }
-    }
-    // HocVan
-    .hocVan {
-      padding-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 100px;
-      background-image: url("../../assets/pattern2.png");
-      h2 {
-        color: $accent-color;
-        text-decoration: underline;
-      }
-      .hocVan_contents {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-bottom: 30px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-        .hocVan_name {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-top: 30px;
-          gap: 30px;
-          .hocVan_img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 80px;
-            img {
-              width: 100%;
-            }
-          }
-          .hocVan_shool {
-            height: 80px;
-            line-height: 1.5;
-            h4 {
-              font-size: 20px;
-              color: $primary-color;
-            }
-          }
-        }
-      }   
-      @include respond-to(tablet){
-        align-items: flex-start;
-        padding-left: 50px;
-      } 
-    }
-    @include respond-to(tablet) {
-      padding: 0 0 0 400px;
-    }
-  }
-}
-
-@keyframes bg-move {
-  0% {
-    background-position: -5px -5px;
-  }
-
-  100% {
-    background-position: 100% 100%; // Di chuyển đến góc trên bên phải
   }
 }

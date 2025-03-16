@@ -47,12 +47,12 @@ const SideNav = () => {
           </li>
           <li onClick={handleMenuClick}>
             <i className="ri-code-line"></i>
-            <Link to="/Dev_Por/projects">Các dự án</Link>
+            <Link to="/Dev_Por/projects">Stills</Link>
           </li>
-          <li onClick={handleMenuClick}>
+          {/* <li onClick={handleMenuClick}>
             <i className="ri-building-4-fill"></i>
             <Link to="/Dev_Por/kinhnghiem">K.Nghiệm</Link>
-          </li>
+          </li> */}
         </ul>
         <div className="line"></div>
         <div className="socials">
