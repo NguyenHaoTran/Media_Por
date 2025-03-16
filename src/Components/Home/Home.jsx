@@ -37,7 +37,7 @@ const Home = () => {
               alt=""
             />
           </div>
-          <h1>Nguyen Hao Tran</h1>
+          <h1>NguyenHaoTran</h1>
         </div>
         <div className="slogan">
           <p>

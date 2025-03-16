@@ -35,19 +35,19 @@ const SideNav = () => {
         <ul>
           <li onClick={handleMenuClick}>
             <i className="ri-home-line"></i>
-            <Link to="/Dev_Por/">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li onClick={handleMenuClick}>
             <i className="ri-profile-line"></i>
-            <Link to="/Dev_Por/about">Về tôi</Link>
+            <Link to="/about">Về tôi</Link>
           </li>
           <li onClick={handleMenuClick}>
             <i className="ri-stack-line"></i>
-            <Link to="/Dev_Por/skills">Kỹ năng</Link>
+            <Link to="/skills">Kỹ năng</Link>
           </li>
           <li onClick={handleMenuClick}>
             <i className="ri-code-line"></i>
-            <Link to="/Dev_Por/projects">Stills</Link>
+            <Link to="/projects">Thư viện ảnh</Link>
           </li>
           {/* <li onClick={handleMenuClick}>
             <i className="ri-building-4-fill"></i>

@@ -18,7 +18,7 @@ function App() {
     const favicon = document.getElementById("dynamic-favicon");
 
     if (favicon) {
-      favicon.href = "/Dev_Por/Gif.gif";
+      favicon.href = "/Gif.gif";
     }
   }, []);
 
@@ -27,11 +27,11 @@ function App() {
       <Router>
         <SideNav />
         <Routes>
-          <Route path="/Dev_Por/" element={<Home />} />
-          <Route path="/Dev_Por/about" element={<About />} />
-          <Route path="/Dev_Por/skills" element={<Skills />} />
-          <Route path="/Dev_Por/projects" element={<Projects />} />
-          <Route path="/Dev_Por/kinhnghiem" element={<KinhNghiem />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/kinhnghiem" element={<KinhNghiem />} />
         </Routes>
       </Router>
     </>

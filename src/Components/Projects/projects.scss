@@ -1,112 +1,211 @@
 @import "./../../styles/main.scss";
 
 .projects_container {
-  padding-top: 120px;
-  padding-bottom: 400px;
+  background-color: rgb(15, 15, 15);
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  h2 {
-    color: $accent-color;
-    text-decoration: underline;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .header_bar {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 80px 25px 50px 25px;
-    background-image: url("../../assets/pattern2.png");
-    .card {
-      width: 350px;
-      height: 190px;
-      margin: 10px;
-      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-      border-radius: 15px;
-      background: rgba(255, 255, 255, 0.1);
-      overflow: hidden;
+    padding: 0 20% 0 20%;
+    background-color: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    .Name {
       display: flex;
       justify-content: center;
       align-items: center;
-      border-top: 1px solid rgba(51, 51, 51, 0.5);
-      border-left: 1px solid rgba(53, 53, 53, 0.5);
-      backdrop-filter: blur(5px);
-      transition: 0.5s;
-
-      &:hover {
-        scale: 105%;
+      .avt {
+        width: 40px;
+        height: 40px;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
       }
+      h1 {
+        font-size: 20px;
+        padding-left: 20px;
+        font-weight: lighter;
+        color: rgb(241, 172, 22);
+      }
+    }
+
+    .slogan {
+      p {
+        color: rgb(190, 190, 190);
+        font-size: 12px;
+      }
+    }
+    @include respond-to(mobile) {
+      padding: 0 5% 0 5%;
+      justify-content: flex-end;
+      background-color: rgba(10, 10, 10, 0.5);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      .Name {
+        gap: 10px;
+        .avt {
+          order: 2;
+        }
+
+        h1 {
+          font-size: 12px;
+          order: 1;
+        }
+      }
+      .slogan {
+        display: none;
+      }
+    }
+    @include respond-to(tablet) {
+      justify-content: flex-end;
+      padding: 0 10% 0 15%;
+      .Name {
+        .avt {
+        }
+
+        h1 {
+          font-size: 12px;
+        }
+      }
+      .slogan {
+        margin-left: 20%;
+      }
+    }
+  }
+
+  .images {
+    max-width: 1200px;
+    padding-top: 150px;
+
+    .title {
+      padding-bottom: 50px;
+      h3 {
+        font-weight: light;
+        text-decoration: underline;
+        color: rgb(241, 172, 22);
+      }
+    }
+
+    .imgs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      padding: 10px;
 
       .img {
+        overflow: hidden;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 10px;
-        img {
-          width: 115%;
-          // check !!!
-          border-radius: 15px;
-        }
-      }
+        cursor: pointer;
+        position: relative;
 
-      .content {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        padding-left: 20px;
-        h3 {
-          font-size: 15px;
-          color: $accent-color;
-          text-decoration: underline;
-          padding-bottom: 10px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0);
+          transition: background-color 0.3s ease-in-out;
         }
 
-        p {
-          line-height: 1.65;
-          font-size: 15px;
-          padding-right: 10px;
+        &:hover::before {
+          background-color: rgba(0, 0, 0, 0.5);
         }
 
-        a {
-          position: relative;
-          display: inline-block;
-          padding: 8px 20px;
-          margin-top: 15px;
-          background: $background-color;
-          color: $primary-color;
-          border-radius: 20px;
-          text-decoration: none;
-          font-weight: 500;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-          cursor: pointer;
-          &:hover {
-            background-color: #051808ce;
+        &.portrait {
+          grid-row: span 3;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
-        @include respond-to(tablet) {
-          padding-left: 60px;
+
+        &.landscape {
+          grid-row: span 1;
+          aspect-ratio: 8 / 6;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
-      @include respond-to(tablet) {
-        width: 700px;
+    }
+  }
+  //
+  //FOOTER
+  .footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+    .socials {
+      display: flex;
+      gap: 10px;
+      a {
+        text-decoration: none;
       }
-      @include respond-to(tablet) {
-        width: 600px;
-        height: 320px;
+      i {
+        color: rgb(155, 155, 155);
       }
+    }
+    p {
+      font-weight: 200;
+      font-style: italic;
+      letter-spacing: 1px;
+      color: rgb(155, 155, 155);
+    }
+  }
+  @include respond-to(mobile) {
+    .socials {
+      padding-left: 5px;
+    }
+    p {
+      font-size: 9px;
+      padding-right: 5px;
     }
   }
 }
 
-// key frame backgroud
-@keyframes bg-move {
-  0% {
-    background-position: -5px -5px;
-  }
+/* Hiệu ứng toàn màn hình khi nhấn vào ảnh */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 
-  100% {
-    background-position: 100% 100%; // Di chuyển đến góc trên bên phải
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
   }
 }
