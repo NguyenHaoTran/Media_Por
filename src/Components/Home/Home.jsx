@@ -49,6 +49,12 @@ const Home = () => {
           </div>
           <h1>NguyenHaoTran</h1>
         </div>
+        <div className="slogan">
+          <p>
+            "Mỗi thước phim không chỉ là hình ảnh, mà còn là câu chuyện, cảm xúc
+            và đam mê."
+          </p>
+        </div>
       </div>
 
       {/* Nội dung chính */}
@@ -60,6 +66,10 @@ const Home = () => {
 
         {/* Danh sách dự án */}
         <div className="projects">
+          <p className="p_projects">
+            "Những thước phim này không chỉ là hình ảnh chuyển động, mà còn là
+            góc nhìn, cảm xúc và cách tôi kể câu chuyện của riêng mình."
+          </p>
           <div className="items_project">
             {videos.map((video, index) => (
               <div
