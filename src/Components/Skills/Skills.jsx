@@ -24,7 +24,7 @@ const Skills = () => {
         <div className="items">
           {/* skill */}
           <div className="item">
-            <img src="public\DaVinci-Resolve-Logo.png" alt="" />
+            <img src="/DaVinci-Resolve-Logo.png" alt="" />
             <div className="text">
               <h3>Davinci resolve</h3>
               <p>
@@ -36,7 +36,7 @@ const Skills = () => {
           </div>
           <div className="line"></div>
           <div className="item">
-            <img src="public\pts_logo.png" alt="" />
+            <img src="/pts_logo.png" alt="" />
             <div className="text">
               <h3>Adobe Photoshop</h3>
               <p>
@@ -48,7 +48,7 @@ const Skills = () => {
           </div>
           <div className="line"></div>
           <div className="item">
-            <img src="public\Pr_logo.png" alt="" />
+            <img src="/Pr_logo.png" alt="" />
             <div className="text">
               <h3>Adobe Premiere Pro</h3>
               <p>
@@ -59,7 +59,7 @@ const Skills = () => {
           </div>
           <div className="line"></div>
           <div className="item">
-            <img src="public\Lr_logp.png" alt="" />
+            <img src="/Lr_logp.png" alt="" />
             <div className="text">
               <h3>Adobe Lightroom Classic</h3>
               <p>
@@ -71,7 +71,7 @@ const Skills = () => {
           </div>
           <div className="line"></div>
           <div className="item">
-            <img src="public\Ae_logo.png" alt="" />
+            <img src="/Ae_logo.png" alt="" />
             <div className="text">
               <h3>Adobe After Effects</h3>
               <p>

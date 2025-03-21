@@ -6,6 +6,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  height: 100%;
   .banner {
     display: flex;
     justify-content: center;
@@ -25,21 +26,34 @@
 
   .contents {
     max-width: 1200px;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
+    @include respond-to(tablet) {
+      width: 100%;
+    }
 
     .name {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 120px;
       width: 100%;
       gap: 50px;
+      border-bottom: 1px solid rgba(95, 95, 95, 0.438);
+      @include respond-to(mobile) {
+        flex-direction: column;
+        padding: 5%;
+      }
+      @include respond-to(tablet) {
+        flex-direction: column;
+        padding: 5%;
+      }
       .avt {
-        width: 600px;
-        height: 600px;
+        width: 500px;
+        height: auto;
+        padding: 10px;
       }
       .right {
         display: flex;
@@ -49,12 +63,63 @@
         h3 {
           color: white;
           opacity: 0.8;
+          font-size: 45px;
         }
         .sub_title {
           padding-top: 20px;
           opacity: 0.7;
+          font-style: italic;
+        }
+        p {
+          padding-top: 30px;
+          font-size: 12px;
+          opacity: 0.6;
         }
       }
+    }
+    .bonus {
+      padding-top: 50px;
+      @include respond-to(tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+      }
+      .content_bonus {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding-top: 20px;
+        border-bottom: 1px solid rgba(95, 95, 95, 0.438);
+        @include respond-to(mobile) {
+          flex-direction: column;
+          padding: 5%;
+        }
+        @include respond-to(tablet) {
+          flex-direction: column;
+          padding: 5%;
+        }
+        img {
+          width: 600px;
+          display: block;
+          order: 2;
+          @include respond-to(mobile) {
+            width: 90%;
+          }
+          @include respond-to(tablet) {
+            width: 90%;
+          }
+        }
+        p {
+          font-size: 12px;
+          opacity: 1;
+          font-style: italic;
+          order: 1;
+        }
+      }
+      padding-bottom: 100px;
     }
   }
 }

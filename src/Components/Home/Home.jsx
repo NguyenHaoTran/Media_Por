@@ -60,7 +60,7 @@ const Home = () => {
       {/* Nội dung chính */}
       <div className="contents">
         <video autoPlay loop muted playsInline className="banner_video">
-          <source src="public/banner_2359.mp4" type="video/mp4" />
+          <source src="/banner_2359.mp4" type="video/mp4" />
           Trình duyệt của bạn không hỗ trợ video.
         </video>
 
